@@ -1,7 +1,7 @@
 # 𝗥𝗢𝗧𝗔𝗧𝗜𝗢𝗡 𝗠𝗢𝗗𝗘 𝟯𝟮𝗯 𝗖𝗢𝗥𝗗𝗜𝗖 𝗛𝗔𝗥𝗗𝗪𝗔𝗥𝗘 𝗔𝗖𝗖𝗘𝗟𝗘𝗥𝗔𝗧𝗢𝗥
 This repository contains an implementation of a 32-bit CORDIC accelerator operating in Rotation Mode, capable of generating sine and cosine values for angles from 0° to 360°.
 
-When using `GENERATE` blocks in Verilog, ensure that multiple generated instances do not unintentionally drive the same variable or net. Since the generated hardware operates concurrently, assigning the same signal from multiple `ALWAYS` blocks can result in multiple-driver conflicts or unintended behavior.
+**Caution**: When using `GENERATE` blocks in Verilog, ensure that multiple generated instances do not unintentionally drive the same variable or net. Since the generated hardware operates concurrently, assigning the same signal from multiple `ALWAYS` blocks can result in multiple-driver conflicts or unintended behavior.
 
 For example, the following approach can cause a conflict because every generated block attempts to drive the same signal: 
 
