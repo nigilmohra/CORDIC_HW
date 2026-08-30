@@ -6,9 +6,9 @@ When using `GENERATE` blocks in Verilog, ensure that multiple generated instance
 For example, the following approach can cause a conflict because every generated block attempts to drive the same signal: 
 
 ```Verilog
-genvar i;
+genvar count_i;
 generate
-  for(count_i; count_i < ITERATIONS; count_i = count_i + 1)
+  for(count_i = 0; count_i < ITERATIONS; count_i = count_i + 1)
   begin
     always @(*)
     being
@@ -21,9 +21,9 @@ endgenerate
 Instead, each generated instance should drive a separate signal or array element:
 
 ```Verilog
-genvar i;
+genvar count_i;
 generate
-  for(count_i; count_i < ITERATIONS; count_i = count_i + 1)
+  for(count_i = 0; count_i < ITERATIONS; count_i = count_i + 1)
   begin
     always @(*)
     being
