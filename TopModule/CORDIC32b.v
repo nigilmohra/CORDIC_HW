@@ -1,5 +1,5 @@
 // ===========================================================================
-// Coordinate Rotation Digital Computer (CORDIC) Hardware Accelerator
+// COORDINATE ROTATION DIGITAL COMPUTER (CORDIC) HARDWARE ACCELERATOR
 // ===========================================================================
 // Rotation Mode (32-Bit Precision)
 // Author : Nigil M R
