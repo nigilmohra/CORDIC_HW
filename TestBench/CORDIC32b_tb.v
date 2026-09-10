@@ -1,5 +1,5 @@
 // ===============================================================
-// Test-Bench for CORDIC Accelerator (CORDIC32b.v)
+// TEST-BENCH FOR CORDIC ACCELERATOR (CORDIC32b.v)
 // ===============================================================
 // Rotation Mode (32-Bit Precision)
 // Author : Nigil M R
